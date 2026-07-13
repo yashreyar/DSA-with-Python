@@ -1,6 +1,3 @@
-from itertools import count
-
-
 def count_word_frequency_in_sentence(sentence):
     
     words = sentence.split()

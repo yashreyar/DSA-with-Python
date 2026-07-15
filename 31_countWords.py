@@ -1,9 +1,9 @@
-def count_word_frequency_in_sentence(sentence):
-    
-    words = sentence.lower().split()
+def count_words(s):
+    words = s.lower().split()
     word_count = {}
     
     for word in words:
+        
         if word in word_count:
             word_count[word] += 1
             
@@ -12,4 +12,4 @@ def count_word_frequency_in_sentence(sentence):
             
     return word_count
 
-print(count_word_frequency_in_sentence("The quick brown fox jumps over the lazy fox"))
+print(count_words("Hello Word word"))

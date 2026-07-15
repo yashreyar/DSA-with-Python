@@ -1,3 +1,5 @@
+# Check if List is Subset of another List
+
 def is_subset(lst1, lst2):
     '''
     lst1 = [1, 2, 3]

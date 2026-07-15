@@ -18,4 +18,4 @@ def is_subsequence(s, t):
     # If tp reached the length of t, we found every character in order!
     return tp == len(t)
 
-print(is_subsequence(s="abcde", t="acbe"))
+print(is_subsequence(s="abcde", t="ace"))

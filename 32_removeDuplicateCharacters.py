@@ -5,7 +5,6 @@ Input: "Hello, World!"
 Output: "Helo, Wrd!"
 '''
 
-
 def remove_duplicates(s):
     result = ""
     

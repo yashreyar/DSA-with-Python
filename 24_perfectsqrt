@@ -1,0 +1,37 @@
+def is_perfect_square(num):
+    if num < 0:
+        return False
+    if num == 0 or num == 1:
+        return True
+    
+    s = 1
+    e = num // 2
+    
+    while s <= e:
+        mid = s + (e - s) // 2
+        square = mid * mid 
+        
+        if square == num:
+            return True
+        elif square < num:
+            s = mid + 1
+        else:
+            e = mid - 1
+    return False
+print(is_perfect_square(17))
+
+# OR
+
+'''
+def is_perfect_square(num):
+    limit = 0
+    if num % 2 == 0:
+        limit = int(num//2) + 1
+    else:
+        limit = int(num+1//2) +1
+    for i in range(limit):
+        if i*i == num:
+            return True
+    return False
+print(is_perfect_square(16))
+'''

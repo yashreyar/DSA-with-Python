@@ -19,7 +19,7 @@ def next_greatest_letter(letters, target):
             e = m - 1
         else:
             s = m + 1
-            
+    # If s reaches the length of the array, s % len(letters) wraps it back to 0
     return letters[s % len(letters)]
 
 print(next_greatest_letter(letters=['c','f','j'], target='k'))

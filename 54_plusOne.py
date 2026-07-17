@@ -9,7 +9,6 @@ Output: [1, 0, 0, 0]
 '''
 
 def plus_one(digits):
-    num = ""
     for i in range(len(digits) - 1, -1, -1):
         if digits[i] < 9:
             digits[i] += 1

@@ -7,6 +7,7 @@ def count_number_freq(lst):
     return hash_map
 
 print(count_number_freq(lst = [1,3,2,4,5,3,1,2,4,2]))
+
 # OR
 
 # O(n)

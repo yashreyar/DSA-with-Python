@@ -5,6 +5,7 @@ Input = 10
 Output = [1,2,5,10]
 '''
 
+# (O(sqrt(n))
 from math import *
 def are_factors(n):
     lst = []
@@ -14,10 +15,14 @@ def are_factors(n):
             lst.append(i)
             if i != n // i:
                 lst.append(n//i)
-    return sorted(lst)
+    lst.sort()
+    return lst
 
 print(are_factors(n=50))
+
+
 '''
+# O(n/2)
 def are_factors(n):
     lst = []
     if n <= 0:
@@ -34,6 +39,7 @@ print(are_factors(n=1))
 # OR
 
 '''
+# O(n)
 def are_factors(n):
     lst = []
     for i in range(1, n+1):

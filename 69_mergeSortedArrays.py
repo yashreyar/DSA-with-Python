@@ -1,3 +1,6 @@
+# Time complexity: O(n+m) 
+# Space complexity: O(n+m) 
+
 '''
 Input: lst1=[1,1,2,3,3,4]
        lst2=[1,2,2,3,4,4,5,6]

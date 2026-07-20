@@ -1,6 +1,6 @@
 # Time complexity: O(n+m)
 # Space complexity: O(n+m)
-def merge_sorted_arrays_optimal(lst1, lst2):
+def merge_sorted_arrays(lst1, lst2):
     result = []
     i, j = 0, 0
     

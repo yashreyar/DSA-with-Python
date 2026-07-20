@@ -1,3 +1,6 @@
+# Time Complexity: O(n^2)
+# Space Complexity: O(1) constant
+
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):

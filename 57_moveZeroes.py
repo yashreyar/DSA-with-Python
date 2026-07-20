@@ -3,6 +3,8 @@ Input: nums = [0, 1, 0, 3, 12]
 Output: [1, 3, 12, 0, 0]
 '''
 
+# Time complexity: O(n)
+# Space complexity: O(1)
 def move_zeroes(nums):
     right_ptr = 0
     

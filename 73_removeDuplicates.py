@@ -9,7 +9,7 @@ Output: [1,2,3,4,5,6,7,8,9]
 # SPace complexity: O(1)
 def remove_duplicates(lst):
     if not lst:
-        return[]
+        return lst
     n = len(lst)
     right_index = 1
     for i in range(1, n):                       # time: O(n)
@@ -26,6 +26,8 @@ print(remove_duplicates(lst=[1,2,2,3,4,4,5,6,7,7,8,8,9,9,9]))
 # Time complexity: O(n)*O(k) = O(n**2)
 # Space complexity: O(n)
 def remove_duplicates(lst):
+    if not lst:
+        return lst
     result = []
     n = len(lst)
     for num in lst:                     # time: O(n)

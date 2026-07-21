@@ -7,6 +7,8 @@ Output:     [[1,4],
             [3,6]]
 '''
 
+# Time complexity: O(n*m)
+# Space complexity: O(n*m)
 def transpose(nums):
     rows = len(nums)
     cols = len(nums[0])

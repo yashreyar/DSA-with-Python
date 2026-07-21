@@ -27,7 +27,6 @@ def set_matrix_zeroes(nums):
         for j in range(cols):
             if row_track[i] == -1 or col_track[j] == -1:
                 nums[i][j] = 0
-                
 
 matrix = [[1, 2, 3], [4, 0, 6], [7, 8, 0]]
 set_matrix_zeroes(matrix)

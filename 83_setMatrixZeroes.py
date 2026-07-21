@@ -33,6 +33,9 @@ matrix = [[1, 2, 3], [4, 0, 6], [7, 8, 0]]
 set_matrix_zeroes(matrix)
 print(matrix) 
 
+
+# OR
+
 '''
 # Time complexity: O((n*m)*(n+m))+O(n*m) 
 # Space complexity: O(1)

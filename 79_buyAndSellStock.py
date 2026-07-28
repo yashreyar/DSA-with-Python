@@ -9,14 +9,10 @@ Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-
 def buy_and_sell_stock(prices):
     min_price = float("inf")
     max_profit = 0
-    
+        
     for price in prices:
-        # Update the minimum buy price so far
-        if price < min_price:
-            min_price = price
-        # Calculate profit if sold today and update max_profit
-        elif price - min_price > max_profit:
-            max_profit = price - min_price
+        min_price = min(min_price, price)               # Lowest buying price so far
+        max_profit = max(max_profit, price - min_price) # Best profit possible today
         
     return max_profit
 

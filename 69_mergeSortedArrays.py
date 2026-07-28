@@ -8,6 +8,8 @@ Input: lst1=[1,1,2,3,3,4]
 Output: [1,1,1,2,2,2,3,3,3,4,4,4,5,6]
 '''
 
+# Time complexity: O(n+m)
+# Space complexity: O(n+m)
 def merge_sorted_arrays(lst1, lst2):
     result = []
     i, j = 0, 0

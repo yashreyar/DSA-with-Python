@@ -1,5 +1,5 @@
 '''
-LeetCpde: https://leetcode.com/problems/3sum/description/
+LeetCode: https://leetcode.com/problems/3sum/description/
 
 Input: nums = [-1,0,1,2,-1,-4]
 Output: [[-1,-1,2],[-1,0,1]]
@@ -8,11 +8,14 @@ Output: [[-1,-1,2],[-1,0,1]]
 # Time complexity: O(nlogn) + O(n^2) = O(n^2)
 # Space complexity: O(1) / O(no. of triplets)
 def three_sum(nums):
-    nums.sort()                         # time: O(nlogn)
+    nums.sort()                           # time: O(nlogn)
     n = len(nums)
     ans = []
     
-    for i in range(n):                  # time: O(n)
+    for i in range(n-2):                  # time: O(n)
+        # Optimization: positive numbers can't sum to 0
+        if nums[i] > 0:
+            break
         # If previous value of i was equal to the current value,
         # Increse i until it reaches a new value
         if i != 0 and nums[i] == nums[i-1]:

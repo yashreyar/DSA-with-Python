@@ -1,15 +1,26 @@
-def findMin(nums):
+# Time complexity: O(logn)
+# Space complexity: O(1)
+def find_min(nums):
+    n = len(nums)
     s = 0
-    e = len(nums) - 1
+    e = n-1
+    mini = float("inf")
     
-    while s < e:
+    while s <= e:
         m = s + (e - s) // 2
-        if nums[m] > nums[e]:
-            s = m + 1
-        else:
-            e = m 
+        
+        # If right part is sorted, minimum will be mid element
+        if nums[m] <= nums[e]:
+            mini = min(mini, nums[m])           # Potential answer found
+            # There can be more minimum element to left of it 
+            e = m-1
             
-    # When s == e, they both point exactly to the minimum element
-    return nums[s]
+        # Otherwise, if left part is sorted
+        else:
+            mini = min(mini, nums[s])           # Potential answer found
+            # There can be more minimum element to left of it 
+            s = m+1
+            
+    return mini
 
-print(findMin(nums=[3,0,1,2]))
+print(find_min(nums=[3,1,2]))

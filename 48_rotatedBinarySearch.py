@@ -4,7 +4,8 @@ Output: 4
 Explanation: The target value 0 is at index 4 in the rotated array.
 '''
 
-
+# Time complexity: O(logn)
+# Space complexity: O(1)
 def search(nums, target):
     s = 0
     e = len(nums) - 1

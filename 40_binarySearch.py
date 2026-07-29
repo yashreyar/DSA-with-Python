@@ -1,3 +1,5 @@
+# Time complexity: O(logn)
+# Space complexity: O(1)
 def binary_search(arr, target):
     s = 0
     e = len(arr) - 1

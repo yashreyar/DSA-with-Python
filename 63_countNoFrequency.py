@@ -2,9 +2,8 @@
 # O(n)
 def count_number_freq(lst):
     hash_map = {}
-    n = len(lst)
-    for i in range(n):                                          # O(n)
-        hash_map[lst[i]] = hash_map.get(lst[i], 0) + 1          # O(1)
+    for num in lst:                                          # O(n)
+        hash_map[num] = hash_map.get(num, 0) + 1             # O(1)
     return hash_map
 
 print(count_number_freq(lst = [1,3,2,4,5,3,1,2,4,2]))

@@ -57,7 +57,7 @@ print(three_sum(nums=[-1,0,1,2,-1,-4]))
 
 '''
 # Time complexity: O(n^3)
-# Space complexity: O(1) / O(no. of triplets)
+# Space complexity: O(no. of triplets)
 def three_sum(nums):
     my_set = set()
     n = len(nums)

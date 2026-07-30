@@ -5,33 +5,23 @@ Input: s = "anagram", t = "nagaram"
 Output: True
 '''
 
+# Time complexity: O(n)
+# Space complexity: O(1)
 def is_anagram(s, t):
     if len(s) != len(t):
         return False
     
-    s_map = {}
-    t_map = {}
-    
-    for i in range(len(s)):
-        if s[i] not in s_map:
-            s_map[s[i]] = 1
-        else:
-            s_map[s[i]] += 1
-            
-    for i in range(len(t)):
-            if t[i] not in t_map:
-                t_map[t[i]] = 1
-            else:
-                t_map[t[i]] += 1
-                
-    if s_map == t_map:
-        return True
-    
-    return False
+    s_map, t_map = {}, {}
+    for ch in s:
+        s_map[ch] = s_map.get(ch, 0) + 1
+        t_map[ch] = t_map.get(ch, 0) + 1
+        
+    return s_map == t_map
 
 print(is_anagram(s="anagram", t="nagaram"))
 
 
+# OR
 
 '''
 # Time Complexity: O(nlogn)

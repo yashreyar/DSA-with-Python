@@ -5,12 +5,12 @@ Input: s = "abcde", goal = "cdeab"
 Output: true
 '''
 
-# Time complexity: O(n^2)
+# Time complexity: O(n)
 # Space complexity: O(n)
 def rotate_string(s, goal):
     if len(s) != len(goal):                        # Time: O(1)
         return False
-    double_s = s+s                                 # Time: O(n)
+    double_s = s+s                                 # Time: O(n), Space: O(2n)
     if goal in double_s:                           # Time: O(n)
         return True
     return False

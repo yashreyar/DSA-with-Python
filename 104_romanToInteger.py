@@ -6,6 +6,8 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 '''
 
+# Time complexity: O(n)
+# Space complexity: O(1)
 def roman_to_integer(s):
     values = {
         'I': 1,

@@ -7,6 +7,8 @@ Explanation: 'e' appears twice while 'r' and 't' both appear once.
 So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
 '''
 
+# Time complexity: O(nlogn)
+# Space complexity: O(n)
 def sort_by_freq(s):
     result = ""
     hash_map = {}
@@ -14,6 +16,8 @@ def sort_by_freq(s):
     for ch in s:
         hash_map[ch] = hash_map.get(ch, 0) + 1
         
+    # Sort by decending values, so -x[1],
+    # If values are same for two characters, sort by ascii value of char, so x[0]
     sorted_char = sorted(hash_map.items(), key=lambda x:(-x[1], x[0]))
     for ch, freq in sorted_char:
         result += (ch*freq)

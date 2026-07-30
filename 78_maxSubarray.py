@@ -17,7 +17,7 @@ def max_subarray(nums):
         maxi = max(total, maxi)
     return maxi
 
-print(max_subarray(nums=[-2,-1,-3,-4,-1,-2,-1,-5,-4]))
+print(max_subarray(nums=[-2,1,-3,4,-1,2,1,-5,4]))
 
 
 # OR

@@ -7,8 +7,9 @@ This takes O(k) time where k is the current length of result.
 Over the whole loop, doing this check repeatedly takes O(n^2) total time.
 '''
 
-
-
+# Time complexity: O(n) -> Because we're using set function to check (if num not in seen:)
+# for list function like if num not in list it takes O(n) time
+# Space complexity: O(n)
 def remove_duplicates_from_unsorted(nums):
     seen = set()
     result = []
@@ -19,5 +20,5 @@ def remove_duplicates_from_unsorted(nums):
     return result
 
 # Example:
-print(remove_duplicates_set([4, 2, 1, 4, 2, 3, 1]))  
+print(remove_duplicates_from_unsorted([4, 2, 1, 4, 2, 3, 1]))  
 # Output: [4, 2, 1, 3]

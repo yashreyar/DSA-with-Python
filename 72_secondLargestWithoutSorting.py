@@ -1,10 +1,11 @@
-
+# Time complexity: O(n)
+# Space complexity: O(1)
 def second_largest_without_sorting(nums):
     largest = float('-inf')
     s_largest = float('-inf')
     n = len(nums)
     
-    for i in range(n):
+    for i in range(n):                                      # O(n) time
         if nums[i] > largest:
             s_largest = largest
             largest = nums[i]

@@ -5,6 +5,8 @@ Input: nums = [2,5,6,0,0,1,2], target = 3
 Output: false
 '''
 
+# Time complexity: O(logn)
+# Space complexity: O(1)
 def rotated_binary_search_II(nums, target):
     n = len(nums)
     s = 0
@@ -12,8 +14,15 @@ def rotated_binary_search_II(nums, target):
     
     while s <= e:
         m = (s+e)//2
+        
         if nums[m] == target:
             return True
+        
+        # EDGE CASE: Handle duplicate elements at boundaries
+        if nums[s] == nums[m] == nums[e]:
+            s += 1
+            e -= 1
+            continue
         
         # Check if left part is sorted
         if nums[s] <= nums[m]:

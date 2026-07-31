@@ -1,5 +1,6 @@
 # Head recursion approach
 # Time complexity : O(2**n)
+# Space complexity : O(2**n)
 
 def fibonacci(n):
     if n == 0 or n == 1:

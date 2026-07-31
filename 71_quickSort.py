@@ -8,7 +8,7 @@ def quick_sort(lst):
     
     # Choose the middle element as the pivot
     pivot = lst[len(lst) // 2]
-    
+
     # Partition the array into three distinct pieces
     left, middle, right = [], [], []
     for x in lst:

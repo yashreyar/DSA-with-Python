@@ -5,6 +5,8 @@ Input: s = "(()())(())(()(()))"
 Output: "()()()()(())"
 '''
 
+# Time complexity: O(n)
+# Space complexity: O(n)
 def remove_outermost_parenthesis(s):
     result = ""
     count = 0
